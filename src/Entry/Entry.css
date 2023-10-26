@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 27rem;
+    width: 32rem;
+    padding: 1rem 0;
     margin: auto;
 }
 
@@ -23,6 +24,7 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .userInput {
