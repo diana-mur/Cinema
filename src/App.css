@@ -1,0 +1,10 @@
+#root {
+  height: 100%;
+}
+
+.mainEntry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
