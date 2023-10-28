@@ -1,0 +1,18 @@
+.mainTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 0 40px;
+}
+
+h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 900;  
+}
+
+.lineInTitle {
+    height: 1px;
+    width: 52px;
+    background-color: white;
+}
