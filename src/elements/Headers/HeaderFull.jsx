@@ -3,7 +3,7 @@ import './Header.css'
 import logo from '../../assets/logo.png'
 import BtnSearch from '../buttons/btnSearch'
 import BtnEntry from '../buttons/btnEntry'
-import Menu from '../menu/menu'
+import Menu from './menu/menu'
 
 export default function HeaderFull() {
     return (

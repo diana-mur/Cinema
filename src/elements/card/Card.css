@@ -41,3 +41,10 @@ h2 {
     font-size: 15px;
     font-weight: 400;
 }
+
+.cardCarousel {
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    min-width: 23.5%;
+}

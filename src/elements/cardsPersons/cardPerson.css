@@ -1,0 +1,109 @@
+/* cardsPersons.jsx */
+
+.popularPersons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+/* cardPerson.jsx */
+
+.cardPerson {
+    display: block;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 55.56%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-width: 265px;
+    min-height: 100%;
+    flex: 1;
+}
+
+.place {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: #F2F60F;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.infoPerson {
+    position: absolute;
+    left: 36px;
+    bottom: 37px;
+}
+
+.namePersonLocal {
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.namePerson {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.agePerson {
+    color: #F2F60F;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* stringPerson.jsx */
+
+.stringsPersons {
+    background-color: #1B2133;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 30px 8px;
+    border-radius: 10px;
+    height: auto;
+    min-width: 265px;
+    flex: 1;
+}
+
+.stringPerson {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #1E2538;
+}
+
+.stringPerson:last-child {
+    border: none;
+}
+
+.stringNamePersonLocal {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 14px auto 3px 0;
+}
+
+.stringNamePerson {
+    color: #3B486B;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.stringAgePerson {
+    color: #F2F60F;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto 22px 0; 
+}
+
+.stringPlacePerson {
+    color: #F2F60F;
+    font-size: 15px;
+    font-weight: 600;
+}

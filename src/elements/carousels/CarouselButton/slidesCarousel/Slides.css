@@ -1,0 +1,6 @@
+.carouselFlip {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}

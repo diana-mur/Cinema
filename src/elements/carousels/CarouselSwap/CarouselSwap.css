@@ -1,0 +1,77 @@
+.newTrailer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mainTrailer {
+    width: 100%;
+    height: 860px;
+    overflow: hidden;
+}
+
+.mainTrailer img {
+    display: block;
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+}
+
+.mainTitleTrailer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mainTitleTrailer h3 {
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.mainTitleTrailer div {
+    display: flex;
+}
+
+.sliderTrailer {
+    width: 100%;
+    height: 7px;
+    background-color: #1B2133;
+    border-radius: 10px;
+    position: relative;
+}
+
+.switch {
+    width: 25%;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #3657CB;
+    transition: all 1s ease-in-out;
+}
+
+.menuTrailers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 22px;
+}
+
+.childTrailer {
+    width: 340px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.childTrailer img {
+    display: block;
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+}
+
+.titleTrailer {
+    margin-top: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}

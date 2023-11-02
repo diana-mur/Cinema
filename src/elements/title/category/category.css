@@ -1,0 +1,13 @@
+.category {
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.aCategory {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+}

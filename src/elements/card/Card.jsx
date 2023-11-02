@@ -1,16 +1,20 @@
-import cardImg from '../../assets/cardImg.png'
 import './Card.css'
 
-export default function Card() {
+export default function Card({ name, img, categories, rating }) {
     return (
         <div className="card">
-            <p className="rating">6.70</p>
+            <p className="rating">{rating}</p>
             <div className="cardImg">
-                <img src={cardImg} alt="" />
+                <img src={img} alt="" />
             </div>
             <div className="about">
-                <h2>Звёздные войны: Скайуокер. Восход</h2>
-                <p className="filmCategories">Фантастика, фэнтези, боевик, приключения</p>
+                <h2>{name}</h2>
+                <p className="filmCategories">{
+                    categories.map((e, index) => {
+                        if (index < e.length - 1) return e + ", "
+                        else if (index == e.length - 1) return e
+                    })
+                }</p>
             </div>
         </div>
     )

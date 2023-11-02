@@ -1,0 +1,90 @@
+.carouselSlide {
+    display: flex;
+    gap: 16px;
+}
+
+.mainSlide {
+    position: relative;
+    height: 772px; 
+    width: 1159px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.infoSlide {
+    position: absolute;
+    top: 37px;
+    left: 32px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infoSlide div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.infoSlide p {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.dataSlide {
+    position: absolute;
+    bottom: 50px;
+    left: 32px;
+}
+
+.dataSlide h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    word-spacing: -10px;
+}
+
+.dataSlide p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+
+.listSlides {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.slide {
+    position: relative;
+    width: 255px;
+    height: 23.5%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.dateSlide {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nameSlide {
+    position: absolute;
+    bottom: 20px;
+    left: 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    word-spacing: -2px;
+}

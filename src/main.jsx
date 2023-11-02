@@ -8,6 +8,7 @@ import Registration from './Registration/Registration'
 import RecoverPass from './RecoverPass/RecoverPass'
 import CreatePass from './RecoverPass/CreatePass/CreatePass'
 import Home  from './Home/Home'
+import Test from './Test'
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: '/recoverpass/createpass',
         element: <CreatePass /> 
+    },
+    {
+        path: '/test',
+        element: <Test /> 
     },
 ])
 

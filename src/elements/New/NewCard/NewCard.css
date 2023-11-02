@@ -1,0 +1,48 @@
+.duesCard {
+    display: flex;
+}
+
+.imgCard {
+    position: relative;
+    width: 96px;
+    height: 141px;
+    overflow: hidden;
+}
+
+.imgCard img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    object-fit: cover;
+    height: 100%;
+
+}
+
+.descripCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 11px;
+}
+
+.nameCard {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.cashCard {
+    color: #F2F60F;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.descripCard p {
+    color: rgba(255, 255, 255, 0.41);
+    font-size: 14px;
+    font-weight: 500;
+}

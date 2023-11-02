@@ -5,10 +5,22 @@
     margin: 55px 0 40px;
 }
 
-h1 {
+.mainTitle div {
+    display: flex;
+    align-items: center;
+}
+
+.dateCash {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 0 0 19px;
+}
+
+.mainTitle h1 {
     color: white;
     font-size: 65px;
-    font-weight: 900;  
+    font-weight: 900;
 }
 
 .lineInTitle {

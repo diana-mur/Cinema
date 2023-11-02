@@ -1,36 +1,88 @@
-import React from 'react'
-import HeaderFull from "../elements/Headers/HeaderFull";
-import BtnOutline from "../elements/buttons/btnOutline";
-import Card from "../elements/card/card";
-import Category from "../elements/category/category";
-import Title from "../elements/title/title";
+import React, { useEffect, useState } from 'react'
 import './Home.css'
-import InscriptionArrow from '../elements/buttons/inscriptArrow';
+import CashDues from '../elements/CashDues/CashDues';
+import Newsletter from '../elements/Newsletter/Newsletter';
+import Footer from '../elements/Footer/Footer';
+import FirstBlock from '../elements/FirstBlock/FirstBlock';
+import SecondBlock from '../elements/SecondBlock/SecondBlock';
+import ThirdBlock from '../elements/ThirdBlock/ThirdBlock';
+import FourthBlock from '../elements/FourthBlock/FourthBlock';
+import FifthBlock from '../elements/FifthBlock/FifthBlock';
+import SixthBlock from '../elements/SixthBlock/SixthBlock';
 
 export default function Home() {
+    const [array, setArray] = useState('');
+    
+    const arrPopFilms = [
+        {
+            name: 'Джокер',
+            img: '../src/assets/cardImg.png',
+            categories: 'Триллер, драма, криминал',
+            rating: '8.50',
+        },
+        {
+            name: 'История игрушек 4',
+            img: '../src/assets/cardImg.png',
+            categories: 'Мультфильм, фэнтези, комедия, приключения ...',
+            rating: '7.80',
+        },
+        {
+            name: 'Однажды в… Голливуде',
+            img: '../src/assets/cardImg.png',
+            categories: 'Драма, комедия',
+            rating: '7.70',
+        },
+        {
+            name: 'Солнцестояние',
+            img: '../src/assets/cardImg.png',
+            categories: 'Ужасы, триллер, драма',
+            rating: '7.10',
+        },
+        {
+            name: 'Джокер',
+            img: '../src/assets/cardImg.png',
+            categories: 'Триллер, драма, криминал',
+            rating: '8.50',
+        },
+        {
+            name: 'История игрушек 4',
+            img: '../src/assets/cardImg.png',
+            categories: 'Мультфильм, фэнтези, комедия, приключения ...',
+            rating: '7.80',
+        },
+        {
+            name: 'Однажды в… Голливуде',
+            img: '../src/assets/cardImg.png',
+            categories: 'Драма, комедия',
+            rating: '7.70',
+        },
+        {
+            name: 'Солнцестояние',
+            img: '../src/assets/cardImg.png',
+            categories: 'Ужасы, триллер, драма',
+            rating: '7.10',
+        },
+    ];
+
+    useEffect(() => {
+        fetch('http://192.168.144.66:8081/api/movies')
+            .then(response => response.json())
+            .then(json => setArray(json))
+    }, [])
+
+
     return (
         <>
-            <div className="container">
-                <HeaderFull />
-                <Title title={'Сейчас в кино'} visible={true}>
-                    <Category />
-                </Title>
-                <div className="filmList">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
-                <BtnOutline />
-            </div>
-            <div className="container">
-                <Title title={'Новые трейлеры'} visible={false}>
-                    <InscriptionArrow title={'Все трейлеры'} />
-                </Title>
+            <FirstBlock />
+            <SecondBlock />
+            <ThirdBlock arr={arrPopFilms} />
+            <FourthBlock />
+            <FifthBlock />
+            <div className="darkBG">
+                <SixthBlock arr={arrPopFilms} />
+                <CashDues />
+                <Newsletter />
+                <Footer />
             </div>
         </>
     )
