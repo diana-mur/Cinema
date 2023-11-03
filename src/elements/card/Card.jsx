@@ -10,10 +10,7 @@ export default function Card({ name, img, categories, rating }) {
             <div className="about">
                 <h2>{name}</h2>
                 <p className="filmCategories">{
-                    categories.map((e, index) => {
-                        if (index < e.length - 1) return e + ", "
-                        else if (index == e.length - 1) return e
-                    })
+                    categories.join(', ')
                 }</p>
             </div>
         </div>
