@@ -1,0 +1,25 @@
+.ringRating {
+    position: relative;
+}
+
+.ringRating p {
+    position: absolute;
+    top: 19px;
+    left: 17px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ringCircle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s;
+}
+
+h4 {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 2px;
+}

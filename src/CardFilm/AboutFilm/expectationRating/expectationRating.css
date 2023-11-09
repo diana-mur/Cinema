@@ -1,0 +1,28 @@
+.progressBar {
+    width: 185px;
+    height: 59px;
+    border-radius: 5px;
+    border: none;
+    background: #1B2133;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadedLoading {
+    position: absolute;
+    left: 0;
+    width: 157px;
+    height: 59px;
+    border: none;
+    border-radius: 5px;
+    background: #2E6125;
+    z-index: 1;
+}
+
+.progressBar p {
+    color: #57D043;
+    font-size: 14px;
+    z-index: 2;
+}

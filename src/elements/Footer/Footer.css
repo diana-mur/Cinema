@@ -5,12 +5,6 @@
     padding-bottom: 50px;
 }
 
-.iconSocMedias {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 45px;
-}
-
 .footer p {
     color: rgba(227, 230, 240, 0.72);
     font-size: 15px;

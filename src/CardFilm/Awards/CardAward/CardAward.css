@@ -1,0 +1,25 @@
+.cardAward {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(54, 87, 203, 0.30);
+}
+
+.cardAward h3 {
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.cardAward h4 {
+    color: #F2F60F;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cardAward p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+}

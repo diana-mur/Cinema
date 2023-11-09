@@ -5,12 +5,15 @@ import BtnOutline from "../../elements/buttons/btnOutline";
 import Card from "../../elements/card/card";
 import Category from "../../elements/title/category/category";
 import "./FirstBlock.css"
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function FirstBlock() {
     const [array, setArray] = useState([]);
     const [arrCategory, setArrCategory] = useState([])
     const [indexCategory, setIndexCategory] = useState()
-    
+    const navigate = useNavigate();
+
+
     useEffect(() => {
         fetch('http://192.168.144.66:8081/api/movies')
             .then(response => response.json())
@@ -26,8 +29,8 @@ export default function FirstBlock() {
     useEffect(() => {
         if (arrCategory.length > 0) {
             fetch(`http://192.168.144.66:8081/api/movies/${arrCategory[indexCategory]}`)
-            .then(response => response.json())
-            .then(json => setArray(json))
+                .then(response => response.json())
+                .then(json => setArray(json))
         }
     }, [indexCategory])
 
@@ -43,11 +46,18 @@ export default function FirstBlock() {
                 <div className="filmList">
                     {array.map((e) => {
                         return (
-                            <Card key={e.id} name={e.localName} img={e.urlIcon} categories={e.genres} rating={e.averageRating} />
+                            <div onClick={
+                                () => {
+                                    navigate(`/${e.id}`)
+                                }} key={e.id}>
+                            <Card key={e.id} name={e.localName} img={e.urlIcon} categories={e.genres} rating={e.averageRating} 
+                             /></div>
                         )
                     })}
                 </div>
-                <BtnOutline />
+                <div className="btn-outline">
+                    <BtnOutline fill={"Все фильмы"} />
+                </div>
             </div>
         </div>
     )

@@ -35,8 +35,8 @@ export default function CarouselSwap() {
                 <div className="mainTitleTrailer">
                     <h3>{array[mainTrailer].name}</h3>
                     <div>
-                        <Like />
-                        <Dislike />
+                        <Like visible={true} />
+                        <Dislike visible={true} />
                     </div>
                 </div>
             </div>

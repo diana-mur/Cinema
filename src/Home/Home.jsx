@@ -70,7 +70,6 @@ export default function Home() {
             .then(json => setArray(json))
     }, [])
 
-
     return (
         <>
             <FirstBlock />

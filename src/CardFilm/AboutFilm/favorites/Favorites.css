@@ -1,0 +1,19 @@
+.favorites {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.heart {
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    background: #1B2133;
+    cursor: pointer;
+}
+
+.favorites p {
+    color: #E8E9EB;
+    font-size: 14px;
+    
+}

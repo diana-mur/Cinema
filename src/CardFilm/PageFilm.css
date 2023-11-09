@@ -1,0 +1,21 @@
+.reducedContainer {
+    margin: 0 135px;
+}
+
+.filmBG {
+    position: relative;
+}
+
+.filmBGgradient {
+    position: absolute;
+    background: linear-gradient(transparent 100px, white);
+    width: 100%;
+    z-index: -1;
+}
+
+.filmBGImg {
+    width: 100%;
+    /* -webkit-filter: blur(30px);
+	filter: blur(2px); */
+    z-index: -20;
+}

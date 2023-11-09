@@ -9,6 +9,7 @@ import RecoverPass from './RecoverPass/RecoverPass'
 import CreatePass from './RecoverPass/CreatePass/CreatePass'
 import Home  from './Home/Home'
 import Test from './Test'
+import PageFilm from './CardFilm/PageFilm'
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     {
         path: '/test',
         element: <Test /> 
+    },
+    {
+        path: '/:movieId',
+        element: <PageFilm /> 
     },
 ])
 

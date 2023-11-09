@@ -1,9 +1,7 @@
 import './btn.css'
 
-export default function BtnOutline() {
+export default function BtnOutline({ fill, img }) {
     return (
-        <div className="btn-outline">
-            <button className="btnOutline">Все новинки</button>
-        </div>
+        <button className="btnOutline"><img src={img} />{fill}</button>
     )
 }

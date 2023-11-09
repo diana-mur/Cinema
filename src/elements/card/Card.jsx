@@ -1,8 +1,8 @@
 import './Card.css'
 
-export default function Card({ name, img, categories, rating }) {
+export default function Card({ name, img, categories, rating, onClick }) {
     return (
-        <div className="card">
+        <div className="card" onClick={onClick}>
             <p className="rating">{rating}</p>
             <div className="cardImg">
                 <img src={img} alt="" />
