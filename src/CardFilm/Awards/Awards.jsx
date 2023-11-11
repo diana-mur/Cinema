@@ -5,7 +5,7 @@ import CardAward from "./CardAward/CardAward";
 
 export default function Awards() {
     return (
-        <div className="container">
+        <div className="container" id="awards">
             <Title title={'Награды'}>
                 <InscriptionArrow title={'Все награды'}/>
             </Title>

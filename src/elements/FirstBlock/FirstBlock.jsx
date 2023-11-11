@@ -41,7 +41,7 @@ export default function FirstBlock() {
                 <Title title={'Сейчас в кино'} visible={true}>
                     <Category selected={indexCategory} setArrCategory={(e) => {
                         setIndexCategory(e)
-                    }} arrCategory={arrCategory} />
+                    }} arrCategory={arrCategory} style={'50%'} />
                 </Title>
                 <div className="filmList">
                     {array.map((e) => {

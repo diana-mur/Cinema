@@ -1,0 +1,27 @@
+.typeReview {
+    border-radius: 10px;
+    background: #1B2133;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 16px 22px;
+    cursor: pointer;
+}
+
+.typeReview p {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.amount {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount p {
+    font-size: 15px;
+}

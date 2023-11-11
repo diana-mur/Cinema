@@ -1,3 +1,5 @@
 .firstBlock {
     background: url('../../assets/mainBG.png') no-repeat;
+    background-size: cover;
+    width: 100%;
 }

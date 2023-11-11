@@ -2,7 +2,6 @@
     display: flex;
     gap: 19px;
     flex-wrap: wrap;
-    width: 50%;
 }
 
 .aCategory {

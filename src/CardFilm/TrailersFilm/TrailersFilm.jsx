@@ -1,13 +1,12 @@
 import InscriptionArrow from "../../elements/buttons/inscriptArrow";
 import Title from "../../elements/title/title";
-import img from "../../assets/tr2.png"
 import Like from "../../elements/buttons/btnLike";
 import Dislike from "../../elements/buttons/btnDislike";
 import IconSocMedias from "../../elements/Footer/iconSocMedias/iconSocMedias";
 
-export default function TrailersFilm({ name }) {
+export default function TrailersFilm({ name, img }) {
   return (
-    <div className="container" id="">
+    <div className="container" id="treilers">
       <Title title={"Трейлеры фильма"}>
         <InscriptionArrow title={"Все трейлеры"} />
       </Title>

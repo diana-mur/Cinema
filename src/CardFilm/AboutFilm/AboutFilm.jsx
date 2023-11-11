@@ -11,7 +11,28 @@ import BlockInfo from "./detailedInfo/blockInfo/blockInfo"
 import { Link } from "react-router-dom"
 import arrowLink from "../../assets/arrowLink.svg"
 
-export default function AboutFilm({ localFilmName, filmName, img, filmRating }) {
+export default function AboutFilm({
+    localFilmName,
+    filmName,
+    img,
+    filmRating,
+    description,
+    createdAt,
+    countries,
+    slogan,
+    screenwriters,
+    producers,
+    operators,
+    composers,
+    designers,
+    editors,
+    genres,
+    worldwideGross,
+    worldPremiereDate,
+    localPremiereDate,
+    ageCategory,
+    durationByMin
+}) {
     return (
         <>
             <div className="aboutFilm">
@@ -28,7 +49,7 @@ export default function AboutFilm({ localFilmName, filmName, img, filmRating }) 
                     <div className="filmRating">
                         <RatingRadial rating={filmRating} />
                     </div>
-                    <p className="about">Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.</p>
+                    <p className="about">{description}</p>
                     <div>
                         <BtnOutline fill={" Смотреть трейлер"} img={play} />
                     </div>
@@ -43,7 +64,22 @@ export default function AboutFilm({ localFilmName, filmName, img, filmRating }) 
                 <ExpectationRating />
                 <Favorites />
             </div>
-            <DetailInfo />
+            <DetailInfo createdAt={createdAt}
+                countries={countries}
+                slogan={slogan}
+                screenwriters={screenwriters}
+                producers={producers}
+                operators={operators}
+                composers={composers}
+                designers={designers}
+                editors={editors}
+                genres={genres}
+                worldwideGross={worldwideGross}
+                worldPremiereDate={worldPremiereDate}
+                localPremiereDate={localPremiereDate}
+                ageCategory={ageCategory}
+                durationByMin={durationByMin}
+            />
             <BlockInfo />
         </>
     )

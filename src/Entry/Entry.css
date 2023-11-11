@@ -76,6 +76,7 @@ body {
     border: none;
     border-radius: 0.625rem;
     margin-top: 0.25rem;
+    text-align: center;
 }
 
 .btnReg {
@@ -88,6 +89,7 @@ body {
     border-radius: 0.625rem;
     background: #1E2538;
     margin-top: 0.88rem;
+    text-align: center;
 }
 
 .linkRestore {

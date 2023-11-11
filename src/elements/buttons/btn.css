@@ -37,6 +37,7 @@
     display: flex;
     align-items: center;
     gap: 27px;
+    cursor: pointer;
 }
 
 .inscriptionArrow p {
@@ -54,15 +55,25 @@
 }
 
 .btnEstimate {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 8px;
-   margin-left: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-left: 8px;
 }
 
 .numLike {
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
+}
+
+.blueButton {
+    color: #FFF;
+    border-radius: 10px;
+    background: #3657CB;
+    /* padding: 18px 33px; */
+    width: 214px;
+    height: 63px;
+    border: none;
 }

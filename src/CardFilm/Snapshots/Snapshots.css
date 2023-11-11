@@ -1,0 +1,21 @@
+.listSnapshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.hor {
+    height: 463px;
+    width: 702px;
+}
+
+.ver {
+    height: 463px;
+    width: 339px;
+}
+
+.snapshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,30 @@
+.quote {
+    position: relative;
+    width: 100%;
+    padding: 61px 54px 40px;
+    border-radius: 10px;
+    background: #191E2E;
+}
+
+.quote h1 {
+    position: absolute;
+    top: -46px;
+    left: 35px;
+    color: #161B29;
+    font-size: 150px;
+    font-style: italic;
+    z-index: 2;
+}
+
+.quote p {
+    color: #FFF;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.quote h6 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}

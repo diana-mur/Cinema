@@ -1,19 +1,18 @@
-import { Link } from "react-router-dom";
 import "./ListBlocks.css";
 
 export default function ListBlock() {
   const arr = [
     {
       title: "Премьеры",
-      link: "",
+      link: "#premiers",
     },
     {
       title: "Трейлеры",
-      link: "",
+      link: "#treilers",
     },
     {
       title: "Рецензии",
-      link: "",
+      link: "#reviews",
     },
     {
       title: "Студии",
@@ -21,23 +20,23 @@ export default function ListBlock() {
     },
     {
       title: "Цитаты",
-      link: "",
+      link: "#quotes",
     },
     {
       title: "Сиквелы и приквелы",
-      link: "",
+      link: "#sequels&prequels",
     },
     {
       title: "Постеры",
-      link: "",
+      link: "#posters",
     },
     {
       title: "Кадры",
-      link: "",
+      link: "#snapshots",
     },
     {
       title: "Награды",
-      link: "",
+      link: "#awards",
     },
   ];
 
@@ -46,9 +45,9 @@ export default function ListBlock() {
       <div className="listTitles">
         {arr.map((e, index) => {
           return (
-            <Link to={``} className="elList" key={index}>
+            <a href={`${e.link}`} className="elList" key={index}>
               {e.title}
-            </Link>
+            </a>
           );
         })}
       </div>

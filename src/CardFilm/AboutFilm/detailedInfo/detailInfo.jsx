@@ -1,48 +1,68 @@
 import "./detailInfo.css"
 
-export default function DetailInfo() {
+export default function DetailInfo({
+    createdAt,
+    countries,
+    slogan,
+    screenwriters,
+    producers,
+    operators,
+    composers,
+    designers,
+    editors,
+    genres,
+    worldwideGross,
+    worldPremiereDate,
+    localPremiereDate,
+    ageCategory,
+    durationByMin
+}) {
     return (
         <div className="info">
-                <div className="titleInfo">
-                    <p>Год:</p>
-                    <p>Страна:</p>
-                    <p>Слоган:</p>
-                    <p>Режиссер:</p>
-                    <p>Сценарий:</p>
-                    <p>Продюсер:</p>
-                    <p>Оператор:</p>
-                    <p>Композитор:</p>
-                </div>
-                <div className="detailedInfo">
-                    <p>2020</p>
-                    <p>Великобритания, Австралия</p>
-                    <p>«Подбери ключ к свободе»</p>
-                    <p>Фрэнсис Аннан</p>
-                    <p>Фрэнсис Аннан, Л.Х. Адамс, Кэрол Гриффитс, ...</p>
-                    <p>Дэвид Баррон, Марк Блэйни, Гари Хэмилтон, ...</p>
-                    <p>Джеффри Холл</p>
-                    <p>Дэвид Хиршфелдер</p>
-                </div>
-                <div className="titleInfo">
-                    <p>Художник:</p>
-                    <p>Монтаж:</p>
-                    <p>Жанр:</p>
-                    <p>Сборы в мире:</p>
-                    <p>Премьера (мир):</p>
-                    <p>Премьера (РФ):</p>
-                    <p>Возраст:</p>
-                    <p>Время:</p>
-                </div>
-                <div className="detailedInfo">
-                    <p>Скотт Бёрд, Эрика Брайан, Мариот Керр, ...</p>
-                    <p>Ник Фентон</p>
-                    <p>Триллер, ...</p>
-                    <p>$12 808</p>
-                    <p>1 марта 2020</p>
-                    <p>14 мая 2020</p>
-                    <p>16+</p>
-                    <p>106 мин. / 01:46</p>
-                </div>
+            <div className="titleInfo">
+                <p>Год:</p>
+                <p>Страна:</p>
+                <p>Слоган:</p>
+                <p>Режиссер:</p>
+                <p>Сценарий:</p>
+                <p>Продюсер:</p>
+                <p>Оператор:</p>
+                <p>Композитор:</p>
             </div>
+            <div className="detailedInfo">
+                <p>{createdAt}</p>
+                <p>{countries}</p>
+                <p>«{slogan}»</p>
+                <p>{screenwriters}</p>
+                <p>{screenwriters}</p>
+                <p>{producers}</p>
+                <p>{operators}</p>
+                <p>{composers}</p>
+            </div>
+            <div className="titleInfo">
+                <p>Художник:</p>
+                <p>Монтаж:</p>
+                <p>Жанр:</p>
+                <p>Сборы в мире:</p>
+                <p>Премьера (мир):</p>
+                <p>Премьера (РФ):</p>
+                <p>Возраст:</p>
+                <p>Время:</p>
+            </div>
+            <div className="detailedInfo">
+                <p>{designers}</p>
+                <p>{editors}</p>
+                <p>{genres}</p>
+                <p>{worldwideGross}</p>
+                <p>{worldPremiereDate}</p>
+                <p>{localPremiereDate}</p>
+                <p>{ageCategory}</p>
+                <p>{durationByMin} мин. / {
+                    (Math.floor(durationByMin / 60) < 10) ? '0' + Math.floor(durationByMin / 60) : Math.floor(durationByMin / 60)
+                }:{
+                        durationByMin % 60 < 10 ? '0' + durationByMin % 60 : durationByMin % 60
+                    }</p>
+            </div>
+        </div>
     )
 }

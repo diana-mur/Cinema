@@ -1,8 +1,8 @@
 import './category.css'
 
-export default function Category({ arrCategory, setArrCategory, selected }) {
+export default function Category({ arrCategory, setArrCategory, selected, style }) {
     return (
-        <div className='category'>
+        <div className='category' style={{width: `${style}`}}>
             {
                 arrCategory.map((item, index) => {
                         return (
